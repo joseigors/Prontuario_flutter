@@ -1,16 +1,16 @@
 # prontuario_medico
 
-A new Flutter project.
+Projeto flutter de um prontuário médico para a disciplina de desenvolvimento mobile.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Para inicializar o projeto em seu desktop/notebook:
+1. Clique no botão code da págine do repositório e baixe o arquivo zip.
+2. Após o download extrair o arquivo.
+3. Abrir o vs code e na aba abrir projetos escolha o arquivo.
 
-A few resources to get you started if this is your first Flutter project:
+Segundo modo:
+1. No prompt de comando do windows digite "git clone https://github.com/joseigors/Prontuario_flutter.git
+2. Digite o comando cd Prontuario_flutter
+3. Digite code .
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
