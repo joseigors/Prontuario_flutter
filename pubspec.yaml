@@ -62,6 +62,7 @@ flutter:
   assets:
     - lib/assets/images/background.jpg
     - lib/assets/images/logo.jpg
+    - lib/assets/images/person.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

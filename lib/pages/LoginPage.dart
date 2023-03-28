@@ -35,13 +35,16 @@ class _LoginPageState extends State<LoginPage> {
                       Container(
                         width: 190,
                         height: 190,
+
                         decoration: const BoxDecoration(
                           image: DecorationImage( image: NetworkImage("https://cdn-icons-png.flaticon.com/512/46/46196.png"),
 
                             fit: BoxFit.fitWidth,
+
                           ),
 
-                            color: Colors.white30,
+
+                            color: Colors.transparent,
                           borderRadius: BorderRadius.all(
                             Radius.circular(80),
 
@@ -62,6 +65,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     textAlign: TextAlign.center,
                   ),
+                  SizedBox(height: 20,),
                   TextFormField(
                     autofocus: false,
                     keyboardType: TextInputType.emailAddress,
@@ -102,11 +106,37 @@ class _LoginPageState extends State<LoginPage> {
                         onPressed: () {},
                       ),
 
+                      TextButton(
+                        child: const Text('Cadastro'),
+                        onPressed: () {
+                          showDialog(context: context,
+                              builder: (BuildContext context){
+                            return AlertDialog(
+                              title: Text('Qual usuario?'),
+                              //content: Text("Conteúdo do pop-up"),
+                                actions: <Widget>[
+                                  TextButton(onPressed: (){
+                                    Navigator.pushNamed(context, "/cadMedico");
+                                  },
+                                      child: Text("Médico")),
+                                  TextButton(onPressed: (){
+                                    Navigator.pushNamed(context, "/cadPaciente");
+                                  },
+                                      child: Text("Paciente")),
+                                ]
+                            );
+
+                              }
+                          );
+                          //Navigator.pushNamed(context, '/cadPaciente');
+                        },
+                      ),
+
                       const SizedBox(
                         height: 10,
                       ),
                       Container(
-                        height: 100,
+                        height: 50,
                         width: 100,
                         alignment: Alignment.centerLeft,
                         decoration: const BoxDecoration(
@@ -131,7 +161,7 @@ class _LoginPageState extends State<LoginPage> {
                               ],
                             ),
                             onPressed: () {
-
+                              Navigator.pushNamed(context, '/home');
                             },
                           ),
                         ),
