@@ -6,12 +6,12 @@ class CustomDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Widget _buildDrawerBack() => Container(
-      decoration: const BoxDecoration(
-          gradient: LinearGradient(
-              colors: [Color.fromARGB(255, 30, 35, 126), Colors.white30],
-              begin: Alignment.topCenter,
-              end: Alignment.bottomRight)),
-    );
+          decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                  colors: [Color.fromARGB(255, 30, 35, 126), Colors.white30],
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomRight)),
+        );
     return Drawer(
       child: Stack(
         children: [
@@ -20,12 +20,10 @@ class CustomDrawer extends StatelessWidget {
             padding: EdgeInsets.zero,
             children: <Widget>[
               const UserAccountsDrawerHeader(
-                  decoration: BoxDecoration(),
-                  accountName: Text("Jhon"),
-                  accountEmail: Text(" Jhon@gmail.com "),
-                  currentAccountPicture: CircleAvatar(
-
-                  ),
+                decoration: BoxDecoration(),
+                accountName: Text("Jhon"),
+                accountEmail: Text(" Jhon@gmail.com "),
+                currentAccountPicture: CircleAvatar(),
               ),
               ListTile(
                 leading: const Icon(Icons.medical_services),
@@ -39,6 +37,7 @@ class CustomDrawer extends StatelessWidget {
                 leading: const Icon(Icons.person),
                 title: const Text("Minha conta"),
                 onTap: () {
+                  Navigator.pushNamed(context, "/minhaConta");
                   //Navegar para outra página
                 },
               ),
@@ -66,7 +65,6 @@ class CustomDrawer extends StatelessWidget {
                   //Navegar para outra página
                 },
               ),
-
             ],
           ),
         ],

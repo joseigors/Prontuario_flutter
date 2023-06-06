@@ -32,7 +32,7 @@ class _ExamePageState extends State<ExamePage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [],
                   ),
-                  Text(
+                  const Text(
                     'Cadastrar Exame',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -107,7 +107,6 @@ class _ExamePageState extends State<ExamePage> {
                   const SizedBox(
                     height: 10,
                   ),
-
                   const SizedBox(
                     height: 10,
                   ),
