@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+//import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:prontuario_medico/widgets/styles/CustomColor.dart';
 import 'package:prontuario_medico/widgets/styles/CustomStyleButton.dart';
@@ -32,7 +32,7 @@ class _MedicoPageState extends State<MedicoPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [],
                   ),
-                  Text(
+                  const Text(
                     'Novo Médico',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,

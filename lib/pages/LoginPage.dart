@@ -16,9 +16,8 @@ class _LoginPageState extends State<LoginPage> {
     return Container(
       decoration: const BoxDecoration(
         image: DecorationImage(
-          image: AssetImage("lib/assets/images/background.jpg"),
-          fit: BoxFit.cover
-        ),
+            image: AssetImage("lib/assets/images/background.jpg"),
+            fit: BoxFit.cover),
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
@@ -35,37 +34,32 @@ class _LoginPageState extends State<LoginPage> {
                       Container(
                         width: 190,
                         height: 190,
-
                         decoration: const BoxDecoration(
-                          image: DecorationImage( image: NetworkImage("https://cdn-icons-png.flaticon.com/512/46/46196.png"),
-
+                          image: DecorationImage(
+                            image: NetworkImage(
+                                "https://cdn-icons-png.flaticon.com/512/46/46196.png"),
                             fit: BoxFit.fitWidth,
-
                           ),
-
-
-                            color: Colors.transparent,
+                          color: Colors.transparent,
                           borderRadius: BorderRadius.all(
                             Radius.circular(80),
-
                           ),
                         ),
-                        ),
-
-
-
+                      ),
                     ],
                   ),
-                  Text('Sua consulta',
+                  const Text(
+                    'Sua consulta',
                     style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 32,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 32,
                       color: Colors.white30,
-
                     ),
                     textAlign: TextAlign.center,
                   ),
-                  SizedBox(height: 20,),
+                  const SizedBox(
+                    height: 20,
+                  ),
                   TextFormField(
                     autofocus: false,
                     keyboardType: TextInputType.emailAddress,
@@ -79,13 +73,11 @@ class _LoginPageState extends State<LoginPage> {
                         labelTextStr: "E-mail",
                         hintTextStr: "informe o seu e-mail"),
                   ),
-
                   const SizedBox(
                     height: 40,
                   ),
                   TextFormField(
                     keyboardType: TextInputType.text,
-
                     validator: (text) {
                       if (text!.isEmpty || text.length < 6) {
                         return "Senha Inválida";
@@ -105,33 +97,33 @@ class _LoginPageState extends State<LoginPage> {
                         child: const Text('Esqueceu a senha?'),
                         onPressed: () {},
                       ),
-
                       TextButton(
                         child: const Text('Cadastro'),
                         onPressed: () {
-                          showDialog(context: context,
-                              builder: (BuildContext context){
-                            return AlertDialog(
-                              title: Text('Qual usuario?'),
-                              //content: Text("Conteúdo do pop-up"),
-                                actions: <Widget>[
-                                  TextButton(onPressed: (){
-                                    Navigator.pushNamed(context, "/cadMedico");
-                                  },
-                                      child: Text("Médico")),
-                                  TextButton(onPressed: (){
-                                    Navigator.pushNamed(context, "/cadPaciente");
-                                  },
-                                      child: Text("Paciente")),
-                                ]
-                            );
-
-                              }
-                          );
+                          showDialog(
+                              context: context,
+                              builder: (BuildContext context) {
+                                return AlertDialog(
+                                    title: const Text('Qual usuario?'),
+                                    //content: Text("Conteúdo do pop-up"),
+                                    actions: <Widget>[
+                                      TextButton(
+                                          onPressed: () {
+                                            Navigator.pushNamed(
+                                                context, "/cadMedico");
+                                          },
+                                          child: const Text("Médico")),
+                                      TextButton(
+                                          onPressed: () {
+                                            Navigator.pushNamed(
+                                                context, "/cadPaciente");
+                                          },
+                                          child: const Text("Paciente")),
+                                    ]);
+                              });
                           //Navigator.pushNamed(context, '/cadPaciente');
                         },
                       ),
-
                       const SizedBox(
                         height: 10,
                       ),
@@ -166,16 +158,14 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                         ),
                       ),
-
                     ],
-                  ),  ],
+                  ),
+                ],
               ),
-
             ],
           ),
-          ),
         ),
-
+      ),
     );
   }
 }
