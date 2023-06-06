@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:prontuario_medico/widgets/styles/CustomColor.dart';
-import 'package:prontuario_medico/widgets/styles/CustomStyleButton.dart';
+// import 'package:prontuario_medico/widgets/styles/CustomColor.dart';
+// import 'package:prontuario_medico/widgets/styles/CustomStyleButton.dart';
 
 class MinhaContaPage extends StatefulWidget {
   const MinhaContaPage({Key? key}) : super(key: key);
