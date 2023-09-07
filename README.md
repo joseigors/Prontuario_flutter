@@ -1,6 +1,6 @@
 # prontuario_medico
 
-Projeto flutter de um prontuário médico para a disciplina de desenvolvimento mobile.
+Projeto flutter de um prontuário médico para facilitar a vida dos usuários em suas consultas. Esse projeto foi relizado na disciplina de desenvolvimento mobile.
 
 ## Getting Started
 
